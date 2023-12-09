@@ -40,11 +40,11 @@ spec:
                   name: redis-secrets-diego
                   key: REDIS_PASS
           volumeMounts:
-            - name: redis-pius-volume
+            - name: redis-diego-volume
               mountPath: /data
   volumeClaimTemplates:
     - metadata:
-        name: redis-pius-volume
+        name: redis-diego-volume
       spec:
         accessModes:
           - ReadWriteOnce
